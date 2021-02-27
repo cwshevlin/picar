@@ -3,4 +3,18 @@ More advanced mapping todo:
 - Create a numpy array map where 1 represents an obstacle and 0 represents no obstacle. The array index represents the angle from the car's perspective.
 	- Create a 100 x 100 array, read the distance, and modify the angle and take another reading
 	- Interpolate points in between the points
-- 
+
+- Image recognition at 1 fps
+
+- Convert numpy map into something that we can run A* on.
+	- Take a measure at -60, get a reading of 13 cm
+	- (13sin(-60), 13 cos(-60)) will get the coords to put in the numpy array
+	- add coords of the car to get coords relative to the car
+	- Once we get the grid of 0s and 1s, we can run A* to find the most direct path.
+
+- Implement A*
+	- Add clearance to the obstacles so that we don't try to go through too narrow of gaps
+	- Possibly create a distance table??
+
+- Test vision
+	- Maybe stop at stop signs and stop lights?
