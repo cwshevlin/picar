@@ -1,0 +1,6 @@
+More advanced mapping todo:
+
+- Create a numpy array map where 1 represents an obstacle and 0 represents no obstacle. The array index represents the angle from the car's perspective.
+	- Create a 100 x 100 array, read the distance, and modify the angle and take another reading
+	- Interpolate points in between the points
+- 
